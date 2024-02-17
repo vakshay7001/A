@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    color: #f29f22;
+    text-align: center;
+    padding: 2em;
+    background-image: url(pix/iii.jpg);
+}
+
+h2 {
+    color: gold; 
+   
+}
+
+#certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.certification {
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 1em;
+    width: calc(33.333% - 2em);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-image: url(pix/iii.jpg);
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    font-weight: 200;
+}
+
+.certification:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #e0f7fa; 
+    transform: scale(1.05);
+}
+
+.certification:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 50%, rgb(221, 11, 102) 150%);
+    z-index: 1;
+}
+
+.certification h3 {
+    color: #d40f99; 
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: black; 
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    background-image: url(pix/iii.jpg);
+}
+.certification p{
+    color: rgb(64, 239, 25); 
+    margin-bottom: 0.5em;
+
+}
+
+  
+
+
+@media (min-width: 768px) {
+    .certification {
+        width: calc(50% - 2em);
+    }
+}
+
+@media (min-width: 1024px) {
+    .certification {
+        width: calc(33.333% - 2em);
+    }
+}
+
+.certification:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #e0f7fa; 
+    transform: scale(1.05);
+}
+
+.certification:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 50%, #ff004f(221, 11, 102) 150%) ;
+    z-index: 1;
+}
+
+.certification h3 {
+    color: #d40f99; 
+    margin-bottom: 0.5em;
+}
+
+.certification p {
+    color: rgb(64, 239, 25); 
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: black; 
+    color: gold;
+    text-align: center;
+    padding: 1em;
+    background-image: url(pix/iii.jpg);
+}

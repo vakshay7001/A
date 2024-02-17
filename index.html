@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3234473bd7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <nav>
+            <img src="pix/168828867_padded_logo.png" class="logo" width="150" height="150" >
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#services">Services</a></li>
+                <li> <a href="#portfolio">Portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Akshay</span><br>Vaidya from <span1>India</span1><span2> ! </span2></h1>
+        
+        </div>
+    </div>
+</div>
+<!-- ----------about-- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pix/bbb.jpg" >
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Enthusiastic CSE graduate with a strong foundation in front-end
+                    development (HTML , CSS , JavaScript),database management (SQL)
+                    and programming language (Python). Also have learned about Quality
+                    Assurance , Software Testing ,SDLC, STLC , ETL process etc.
+                    Throughout the coursework. Passionate about leveraging a robust skill
+                    set to drive innovation and contribute to software development
+                    projects, while continuously adapting new things .</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><h3>UI/UX</h3></span><br>Designing Web/App Interfaces</li>
+                            <li><span><br><h3>Web Development</h3></span><br>Web App Development</li>
+                            <li><span><br><h3>App Development</h3></span><br>Building Android/IOS apps</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><h3>19/01/2024 - Current</h3><br></span><br>Web Development Internship at EduNexa Tech</li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span><b><h3>1. Malware Detection And Cyber Security</h3></b></span><br><h5>This was my final year project where we focused on the malware detection in
+                                the devices. In my academic journey, I had the opportunity to work on a project
+                                that truly ignited my passion for cybersecurity – 'Malware Detection and Cyber
+                                Security using Support Vector Machines (SVM).'<br> <br>
+                                <p1>This project allowed me to delve deep into the world of cybersecurity, where I
+                                    leveraged the power of machine learning and SVM to defend against malicious
+                                    software threats. In essence, we developed a sophisticated system that could
+                                    identify and classify malware with remarkable accuracy.</p1> <br><br>
+                                <p2>Throughout this project, I gained invaluable insights into the intricate nature of
+                                    cybersecurity and the importance of staying one step ahead of cyber threats. It
+                                    reinforced the significance of proactive measures in safeguarding data and
+                                    systems.</p2> <br> <br>
+                                <p3>It fueled my desire to contribute to the field of cybersecurity, where I believe
+                                    my skills and dedication can make a meaningful impact in ensuring the digital
+                                    safety of organizations and individuals alike.
+                                    Technologies used : Python , SQLite , PHP , Machine Learning , SVM ,
+                                    OS ( Windows )</p3></h5></li>
+                            <li><span> <br><br><b><h3>2. House Rent Management System</h3></b></span><br><h5> The project consists of a website that was designed to show the flats available
+                                for rents.
+                                Along with it, system was responsible to keep and manage all the records
+                                associated with particular flats.<br><br><p1>For ex: Owner information , customer information , transaction of rents , due
+                                    date ,record of how many years/months a particular person was staying ,etc.
+                                    Beneficial for the customers and also to a broker or Owner .</p1><br><br>
+                                Learned how the website works & ensuring ease of use on various devices.
+                                Technologies used : HTML ,CSS, JavaScript, Sql.</h5></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><h3>2019-2023</h3></span><br>Bachelor of Engineering at Smt.Kashibai Navale College of Engineering. <h5>[ 7.9 CGPA ] i.e. [ 71.50 % ]</h5></li>
+                            <li><span><br><h3>2017-2018</h3></span><br>Higher Secondary Education at Sinhgad College of Arts, Science & Commerce. <h5>[ 61.54 % ]</h5> </li>
+                            <li><span><br><h3>2015-2016</h3></span><br>Central Board of Secondary Education at Pravara Central Public School.<h5>[ 68.40 % ]</h5></li>
+                            
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p><ul>*Responsive and mobile-friendly website development.</ul>
+            <ul>*Front-end development using HTML, CSS, and JavaScript.</ul> 
+            <ul>*Full-stack development using Python for the back end.</ul></p>
+            <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank"><br>Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database Management</h2>
+            <p><ul>*Database design and optimization.</ul>
+            <ul>*SQL query optimization.</ul>
+            <ul>*Data modeling and architecture.</ul></p>
+            <a href="https://en.wikipedia.org/wiki/Data_management" target="_blank"><br>Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-code-branch"></i>
+            <h2>Python Development</h2>
+            <p><ul>*Custom Python application development.</ul>
+            <ul>*Integration of Python with web applications.</ul></p>
+            <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><Br>Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>Security</h2>
+            <p><ul>*Implementing security best practices in web applications.</ul>
+            <ul>*Conducting security audits and vulnerability assessments..</ul></p>
+            <a href="https://en.wikipedia.org/wiki/Computer_security" target="_blank"><br>Learn more</a>
+        </div>
+    
+        </div>
+    </div>
+</div>
+<!-- ------------portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pix/ccc.jpg">
+                <div class="layer">
+                    <h3>Research in Cyber Security</h3>
+                    <p>Cyber-security threats are a growing concern in
+                        networked environments. The development of Intrusion Detection
+                        Systems (IDSs) is fundamental in order to provide extra level of
+                        security</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pix/fff.jpg">
+                <div class="layer">
+                    <h3>Malware Detection using SVM</h3>
+                    <p>The propose of Support Vector Machine is based to malware detection being connected with machine learning 
+                        techniques that is based on SVM classifier.</p>
+                        <a href="./Malware Detection using SVM.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pix/eee.jpg">
+                <div class="layer">
+                    <h3>Responsive Blog using Web Design</h3>
+                    <p>A website that responds to the device that accesses it and delivers the appropriate output for it uses responsive design</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="certificate.html" target="_blank" class="btn" >Certification</a>
+    </div>
+</div>
+<!-- -----------contact----- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>akshayvaidya.skncoe.comp@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9404644329</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/akshay-vaidya-159270246/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_v_a_k_s_h_a_y_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com/vakshay007" target="_blank"><i class="fa-brands fa-x-twitter" target="_blank"></i></a>
+                    
+                </div>
+                <a href="pix/Akshay_Vaidya_Resume__.pdf" download class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" pattern=".+@gmail.com" size="30"  name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>    
+                <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Akshay<i class="fa-solid fa-user-shield"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");    
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }    
+
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-300px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzaCtFKIroIRnHqZKzet9Mcr1XbGJ8KTTneML_B6OwKZH-t40NlAgeaij3uhr5KSJMXzQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Snowfall effect -->
+<div id="snowfall"></div>
+<!-- Add this script after your existing scripts -->
+<!-- Add this script after your existing scripts -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const snowfallContainer = document.getElementById("snowfall");
+  
+      // Function to create a snowflake
+      function createSnowflake() {
+        const snowflake = document.createElement("div");
+        snowflake.className = "snowflake";
+  
+        // Randomize snowflake position
+        const xPos = Math.random() * window.innerWidth;
+        const yPos = Math.random() * window.innerHeight;
+  
+        // Randomize animation duration for a more natural look
+        const duration = Math.random() * 5 + 5; // between 5s and 10s
+  
+        // Apply styles
+        snowflake.style.left = `${xPos}px`;
+        snowflake.style.animationDuration = `${duration}s`;
+  
+        // Append snowflake to container
+        snowfallContainer.appendChild(snowflake);
+  
+        // Remove snowflake when it reaches the bottom
+        snowflake.addEventListener("animationiteration", () => {
+          snowflake.remove();
+        });
+      }
+  
+      // Generate snowflakes periodically
+      setInterval(createSnowflake, 500);
+    });
+  </script>
+  
+  
+  
+  
+</body>
+
+</html>         
